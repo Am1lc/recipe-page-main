@@ -18,10 +18,75 @@ html {
 
 body {
     background-color: #ffffff;
+    padding: 40px;
 }
 
-main {
-    padding: 40px;
+.grid-container {
+    display: grid;
+    /* grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); */
+
+    /* Simplifying the code */
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    grid-template-areas:
+        "gi1-alias gi1-alias gi1-alias"
+        "gi2-alias gi2-alias gi2-alias"
+        "gi3-alias gi3-alias gi3-alias";
+    margin:0 auto;
+}
+
+.gi-1 {
+    grid-area: gi1-alias;
+}
+
+.gi-2 {
+    grid-area: gi2-alias;
+}
+
+.gi-3 {
+    grid-area: gi3-alias;
+}
+
+.gi-1 > h1 {
+    margin-bottom: 10px;
+}
+
+.first-recipe {
+    display: grid;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    background-color: #fff5fa;
+    border-radius: 10px;
+}
+
+.first-recipe > h3 {
+    margin-top: 20px;
+    display: grid;
+    margin-left: 25px;
+    color: #7b284f;
+}
+
+.first-recipe > ul {
+    display: grid;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+
+.first-recipe > ul > li {
+    line-height: 25px;
+}
+
+.ingredients > ul > li {
+    margin-left: 25px;
+    line-height: 25px;
+    list-style: disc !important;
+}
+
+.ingredients > ul {
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 h1 {
@@ -31,6 +96,12 @@ h1 {
 h2 {
     font-family: "Young Serif", serif;
 }
-.first-recipe {
-    background-color: #fff5fa;
-}
+
+.gi-2 {
+    border-top: 1px solid black;
+  }
+
+.first-recipe > ul > li::marker {
+    color: #7b284f;
+  }
+  
