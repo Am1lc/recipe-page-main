@@ -3,6 +3,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
 
+:root {
+    --Nutmeg: 	#854632;
+    --DarkRaspberry: #7b284f;
+
+    --White: #ffffff;
+    --RoseWhite: #fff5fa;
+    --Eggshell:	#f3e6d8;
+    --LightGrey: #e4ded8;
+    --WengeBrown: #5f574e;
+    --DarkCharcoal: #302d2c;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -78,17 +90,6 @@ body {
     line-height: 25px;
 }
 
-.ingredients > ul > li {
-    margin-left: 25px;
-    line-height: 25px;
-    list-style: disc !important;
-}
-
-.ingredients > ul {
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
 h1 {
     font-family: "Young Serif", serif; 
 }
@@ -104,4 +105,28 @@ h2 {
 .first-recipe > ul > li::marker {
     color: #7b284f;
   }
+
+.first-recipe > ul > li > span {
+    color: #302d2c !important;
+    font-weight: bold;
+}
+
+.ingredients > ul > li {
+    margin-left: 25px;
+    line-height: 25px;
+    list-style: disc !important;
+}
+
+.ingredients > ul {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.ingredients > ul > li::marker {
+    color: #7b284f;
+  }
+
+.ingredients > h2 {
+    color: #854632;
+}
   
