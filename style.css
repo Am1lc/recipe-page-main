@@ -25,7 +25,8 @@ html {
     font-size: 16px;   
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
-    font-style: normal;         
+    font-style: normal; 
+    color: #302d2c !important;        
 }
 
 body {
@@ -98,10 +99,6 @@ h2 {
     font-family: "Young Serif", serif;
 }
 
-.gi-2 {
-    border-top: 1px solid black;
-  }
-
 .first-recipe > ul > li::marker {
     color: #7b284f;
   }
@@ -109,6 +106,7 @@ h2 {
 .first-recipe > ul > li > span {
     color: #302d2c !important;
     font-weight: bold;
+    margin-left: 15px;
 }
 
 .ingredients > ul > li {
@@ -122,6 +120,11 @@ h2 {
     margin-bottom: 20px;
 }
 
+.ingredients > ul > li > span {
+    color: #302d2c !important;
+    margin-left: 15px;
+}
+
 .ingredients > ul > li::marker {
     color: #7b284f;
   }
@@ -129,4 +132,87 @@ h2 {
 .ingredients > h2 {
     color: #854632;
 }
-  
+
+.gi-2 {
+    border-top: 1px solid #e4ded8;
+  }
+
+.gi-2 > h2 {
+    color: var(--Nutmeg);
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.gi-2 > ol > li::marker {
+    color: #7b284f;
+    font-weight: bold;
+    font-family: "Outfit", sans-serif;
+  }
+
+.gi-2 > ol > li > span {
+    color: var(--DarkCharcoal);
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.gi-2 > ol {
+    margin-left: 25px;
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+
+.gi-3 {
+    border-top: 1px solid #e4ded8;
+  }
+
+.gi-3 > h2 {
+    color: var(--Nutmeg);
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.gi-3 > p {
+    margin-bottom: 20px;
+}
+
+.nutri {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 12px;
+    align-items: center;
+}
+
+.quatities {
+    color: #854632;
+    font-weight: bold;
+}
+
+.n-1 {
+    border-bottom: 1px solid #e4ded8;
+}
+
+.n-2 {
+    border-bottom: 1px solid #e4ded8;
+}
+
+.n-3 {
+    border-bottom: 1px solid #e4ded8;
+}
+
+.nutri > p {
+    margin-bottom: 10px;
+}
+
+.owner {
+    margin-top: 25px;
+}
+
+.owner > a {
+    text-decoration: none;
+    color: var(--DarkRaspberry);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
