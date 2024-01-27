@@ -31,7 +31,7 @@ html {
 
 body {
     background-color: #ffffff;
-    padding: 40px;
+    
 }
 
 .grid-container {
@@ -40,12 +40,17 @@ body {
     grid-template-columns: repeat(3, 1fr); */
 
     /* Simplifying the code */
-    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    grid-template: repeat(4, 1fr);
     grid-template-areas:
-        "gi1-alias gi1-alias gi1-alias"
-        "gi2-alias gi2-alias gi2-alias"
-        "gi3-alias gi3-alias gi3-alias";
+        "omelette"
+        "gi1-alias"
+        "gi2-alias"
+        "gi3-alias";
     margin:0 auto;
+}
+
+.omelette {
+    grid-area: omelette;
 }
 
 .gi-1 {
@@ -62,6 +67,10 @@ body {
 
 .gi-1 > h1 {
     margin-bottom: 10px;
+}
+
+.gi-1, .gi-2, .gi-3 {
+    margin: 0px 40px;
 }
 
 .first-recipe {
@@ -92,11 +101,15 @@ body {
 }
 
 h1 {
-    font-family: "Young Serif", serif; 
+    font-family: "Young Serif", serif;
+    font-size: 2rem; 
+    font-weight: 400;
+    margin-top: 20px;
 }
 
 h2 {
     font-family: "Young Serif", serif;
+    font-weight: 400;
 }
 
 .first-recipe > ul > li::marker {
@@ -205,6 +218,7 @@ h2 {
 
 .owner {
     margin-top: 25px;
+    margin-bottom: 35px;
 }
 
 .owner > a {
@@ -215,4 +229,33 @@ h2 {
 img {
     max-width: 100%;
     height: auto;
+}
+
+@media (min-width: 576px) {
+    body {
+        padding: 20px 50px;
+        background-color: var(--Eggshell);
+    }
+
+    .gi-1, .gi-2, .gi-3 {
+        margin: 0px 0px;
+    }
+
+    .grid-container {
+        background-color: var(--White);
+        border-radius: 10px;
+        padding: 30px;
+        max-width: 550px;
+        margin: 50 auto;
+    }
+
+    .gi-2 > ol > li {
+        margin-bottom: 10px;
+    }
+
+    img {
+        margin: auto;
+        border-radius: 10px; 
+         
+    }
 }
