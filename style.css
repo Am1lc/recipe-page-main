@@ -94,6 +94,7 @@ body {
     margin-top: 10px;
     margin-bottom: 20px;
     line-height: 25px;
+    padding-right: 35px;
 }
 
 .first-recipe > ul > li {
@@ -130,7 +131,7 @@ h2 {
 
 .ingredients > ul {
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .ingredients > ul > li > span {
@@ -166,6 +167,10 @@ h2 {
     color: var(--DarkCharcoal);
     font-weight: bold;
     margin-left: 15px;
+}
+
+.gi-2 > ol > li {
+    margin-bottom: 5px;
 }
 
 .gi-2 > ol {
